@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - chot-tot</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:bold,wght@1,300&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<div class="app">
+  
+  <header class="header">
+    <div class="grid">
+      <div class="grid__full">
+        <div class="header__navbar">
+          <ul class="header__navbar-list ">
+            <li class="header__navbar-item head">
+              <a href="https://www.chotot.com/" class="header__navbar-item-link">Chợ tốt</a>
+              <div class="header__navbar-item-mid"></div>
+            </li>
+
+            <li class="header__navbar-item">
+              <a href="https://www.nhatot.com/" class="header__navbar-item-link">Nhà tốt</a>
+              <div class="header__navbar-item-mid"></div>
+            </li>
+            <li class="header__navbar-item">
+              <a href="https://xe.chotot.com/" class="header__navbar-item-link">Chợ tốt xe</a>
+              <div class="header__navbar-item-mid"></div>
+            </li>
+            <li class="header__navbar-item">
+              <a href="https://www.vieclamtot.com/" class="header__navbar-item-link">Việc làm tốt</a>
+            </li>
+          </ul>
+          <ul style="z-index: 9;" class="header__navbar-list header__navbar-list-right">
+            <li class="header__navbar-item">
+              <span class="header__navbar-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__icon bi bi-pencil-square" viewBox="0 0 16 16">
+  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+  </svg>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5begvG3B5NE29iy3JnXya_6zY_DyHdIIfb3TnnQTNqr5ZVQ/viewform?vc=0&c=0&w=1&flr=0" class="header__navbar-item-link">
+                  <span class="header__navbar-title-wrap">
+                    Đóng góp ý kiến
+                  </span>
+                </a>
+              </span>
+            </li>
+            <li class="header__navbar-item header__navbar-item__not-hover">
+              <span class="header__navbar-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__icon bi bi-box-arrow-in-down" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/>
+    <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+  </svg>
+
+                <a href="#" class="header__navbar-item-link">
+                  <span class="header__navbar-title-wrap">
+                    Tải ứng dụng
+                  </span>
+                    <div class="header__qr-code">
+                      <img src="https://static.chotot.com/storage/default/aw-download-qr.png" class="header__qr-code-img">
+                      <div class="header__app-wrap">
+                        <img src="https://static.chotot.com/storage/default/appstore.png" class="header__app-img">
+                        <img src="https://static.chotot.com/storage/default/playstore.png" class="header__app-img">
+                      </div>
+                      <img src="https://static.chotot.com/storage/default/huaweistore.png" class="header__app-img-2">
+                    </div>
+                  
+                </a>
+              </span>
+            </li>
+            <li class="header__navbar-item unhead">
+              <span class="header__navbar-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__icon bi bi-question-circle" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+  </svg>
+
+                <a href="https://trogiup.chotot.com/" class="header__navbar-item-link">
+                  <span class="header__navbar-title-wrap">
+                    Trợ giúp
+                  </span>
+                </a>
+              </span>
+            </li> 
+          </ul>
+        </div>
+        <div class="header__with-logo">
+          <a href="https://www.chotot.com/" class="header__logo-wrap">
+            <img src="https://static.chotot.com/storage/default/transparent_logo.webp" class="header__logo-img">
+          </a>
+          <ul class="header__navbar-list header__navbar-list-right">
+            <li class="header__navbar-item">
+              <span class="header__navbar-icon-wrap">
+                <a href="https://id.chotot.com/" class="header__navbar-item-link .header__navbar-item__not-hover">
+                <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="header__icon bi bi-card-list" viewBox="0 0 16 16">
+    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+    <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+  </svg>
+
+                
+                  <span class="header__navbar-title-wrap">
+                    Quản lý tin
+                  </span>
+                </a>
+              </span>
+            </li>
+            <li class="none header__navbar-item ">
+              <span class="header__navbar-icon-wrap">
+                <a href="https://id.chotot.com/login" class="header__navbar-item-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__icon bi bi-bag-check" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+  
+
+                  <span>
+                  <span class="header__navbar-title-wrap">
+                    Đơn hàng
+                  </span>
+                    <!--<div class="header__qr-code">
+                      <img src="https://static.chotot.com/storage/default/aw-download-qr.png" class="header__qr-code-img">
+                      <div class="header__app-wrap">
+                        <img src="https://static.chotot.com/storage/default/appstore.png" class="header__app-img">
+                        <img src="https://static.chotot.com/storage/default/playstore.png" class="header__app-img">
+                      </div>
+                      <img src="https://static.chotot.com/storage/default/huaweistore.png" class="header__app-img-2">
+                    </div>-->
+                  
+                    </a></span>
+                </svg>
+              </span>
+            </li>
+            <li class="none header__navbar-item">
+              <span class="header__navbar-icon-wrap">
+                 <a href="https://id.chotot.com/login" class="header__navbar-item-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class=" header__icon bi bi-chat-dots" viewBox="0 0 16 16">
+    <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+    <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+  </svg>
+
+               
+                  <span class="header__navbar-title-wrap">
+                    Chat
+                  </span>
+                </a>
+              </span>
+            </li> 
+            <li class="header__navbar-item">
+              <span class="header__navbar-icon-wrap">
+                <a href="https://id.chotot.com/login" class="header__navbar-item-link">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="header__icon bi bi-bell" viewBox="0 0 16 16">
+    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+  </svg>
+
+                
+                  <span class="header__navbar-title-wrap">
+                    Thông báo
+                  </span>
+                </a>
+              </span>
+            </li>
+            <li class="header__navbar-item unhead">
+              <span class="header__navbar-icon-wrap">
+                <a href="https://id.chotot.com/login" class="header__navbar-item-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__icon bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+  </svg>
+
+                
+                  <span class="header__navbar-title-wrap">
+                    Tài khoản
+                  </span>
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header__with-search">
+    <div class="grid">
+      <div class="grid__full">
+        <div class="header__search-wrap">
+        <span>
+          <input type="text" class="header__search" placeholder="Tìm kiếm trên chợ tốt">
+          <div class="header__search-icon">
+            <a style="color: var(--white-color);" href="https://id.chotot.com/undefined/toan-quoc/mua-ban?q=aaa"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header-search-icon-find bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></a>
+          </div>
+        </span>
+        <div class="header__upload-wrap">
+        <a href="https://id.chotot.com/" class="header__upload">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=" currentColor" class="header__upload-icon bi bi-arrow-up-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+  </svg>
+          ĐĂNG TIN
+          </span>
+        </a>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div style="background:url(https://static.chotot.com/storage/banner/Theming-HBNT_v1.png)" class="contain">
+    <div class="grid">
+      <div class = "grid__full">
+        <div class="contain-image">
+          <img src="https://cdn.chotot.com/admincentre/jPdIrHfofT_ZSteezd2bKEPGpqqNy5GfS1t30PwAb6o/preset:raw/plain/38f557568feb1593e12751594e32cb0d-2816820909311966279.jpg" class="app-img">
+          <div class="category-icon">
+            <div class="category-icon-wrap">
+              <div class="category-item">
+                <a style="text-decoration: none" href="https://www.chotot.com/chuong-trinh/lam-the-nao-de-ban-xe-nhanh">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FizaFQ4uaJ1jjRkTVcxwtgyG0eMNLFqaSw7Sd2ZOjXzA%2Fpreset%3Araw%2Fplain%2F2c5fe2b560384763dc6ed6db81f2f04b-2817562338380111764.jpg&w=256&q=95" class="category-img">
+                
+                <h4 class="category-title">Công cụ bán xe nhanh</h4>
+                  
+              </div>
+              <div class="category-item">
+                <a style="text-decoration: none" href="https://id.chotot.com/login?continue=https%3A%2F%2Fwww.chotot.com%2Fdashboard%2Fbalances&service=menu">
+                  <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FvmzgXwahsyAR3yqOFOxlC4I54sBtGC8KeSqPhnVqo3M%2Fpreset%3Araw%2Fplain%2Fea30aa00d4c36d21a6d56fe745397327-2741458954087890671.jpg&w=256&q=95" class="category-img">
+                  <h4 class="category-title">Nạp đồng tốt</h4>
+                </a>
+              </div>
+              <div class="category-item">
+                <a style="text-decoration: none" href="https://www.chotot.com/uu-dai/tat-ca">
+                  <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FTIuAGrBq3aKlyK_5A6rZF6W9TpYYcYrkCMX8qao5jYY%2Fpreset%3Araw%2Fplain%2F508bf25ad611db4034fa5dfde0fe8a73-2741458967710030990.jpg&w=256&q=95" class="category-img">
+                  <h4 class="category-title">Chợ tốt ưu đãi</h4>
+                </a>
+              </div>
+              <div class="category-item">
+                <a style="text-decoration: none" href="https://id.chotot.com/?continue=https://www.chotot.com/instantsell">
+                  <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FVbCyrBv5_7syAqlY66I_5liGgyMEgaFR3d8g7bdzAQo%2Fpreset%3Araw%2Fplain%2Ffcaeec4b5b9cdee81775eed55b825f5e-2808268926002381368.jpg&w=256&q=95" class="category-img">
+                  <h4 class="category-title">Thu mua điện thoại</h4>
+                </a>
+              </div>
+              <div class="category-item">
+                <a style="text-decoration: none" href="https://xe.chotot.com/thu-mua-xe-oto-cu">
+                  <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fpu3VBwfaHY7VoKkMMkZjYA1tKHBZtt8GDpIYaJgrweU%2Fpreset%3Araw%2Fplain%2Fd5647aa85eaa65381b0a8032499cb915-2815961809231084449.jpg&w=256&q=95" class="category-img">
+                  <h4 class="category-title">Thu mua ô tô</h4>
+                </a>
+              </div>
+              <div class="category-item">
+                <a style="text-decoration: none" href="https://id.chotot.com/?continue=https://www.chotot.com/bookmark/tin-dang-da-luu">
+                  <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FPeH_Zz-8hDT7yZ8F2Mm-BI4p7HWGasDhgq8I_7xdXyk%2Fpreset%3Araw%2Fplain%2Fe16cec7ca2ff9d7649268427ea9c1e4e-2741458979427623023.jpg&w=256&q=95" class="category-img">
+                  <h4 class="category-title">Tính năng đã lưu</h4>
+                </a>
+              </div>
+              <div class="category-item">
+                <a style="text-decoration: none" href="https://id.chotot.com/?continue=https%3A%2F%2Fwww.chotot.com%2Fdang-tin%3Fgiveaway%3Dtrue%26service%3Dflashad%26utm_source%3D&service=flashad">
+                  <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FBJ2sRQGytbTbBoxCqR3juzBaObXNvsJz9Q9KC8O73gQ%2Fpreset%3Araw%2Fplain%2F930641d458c0e05889f865e35a0edefb-2763757223248164734.jpg&w=256&q=95" class="category-img">
+                  <h4 class="category-title">Đăng tin cho tặng</h4>
+                </a>
+              </div>
+              <div class="category-item">
+                <a style="text-decoration: none" href="https://id.chotot.com/?continue=https://www.chotot.com/bookmark/tim-kiem-da-luu">
+                  <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FSDwFNRG5QRbMeZWWAa4zI7AL6eJdnzO8P6H_1DxTi4I%2Fpreset%3Araw%2Fplain%2Fc7ae341fb3dad555452cb23a8b903275-2741458990797599981.jpg&w=256&q=95" class="category-img">
+                <h4 class="category-title">Tìm kiếm đã lưu</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+       </div>
+        
+          
+        <div class="discovery-category-wrap">
+          <h2 class="contain-title">Khám phá danh mục</h2>
+          <span>
+            <div class="discovery-category">
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.nhatot.com/?_ga=2.1679732493661.1853605295.1679320394&ctfp=07b202a6-327d-4404-96f7-8fd86d9e3ace" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F1000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Bất động sản</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://xe.chotot.com/?_ga=2.1679732685572.1853605295.1679320394&ctfp=07b202a6-327d-4404-96f7-8fd86d9e3ace" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F14000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Đồ gia dụng, nội thất, cây cảnh</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/mua-ban-giai-tri-the-thao-so-thich" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F5000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Giải trí, thể thao, sở thích</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://xe.chotot.com/?_ga=2.1679732758651.1853605295.1679320394&ctfp=07b202a6-327d-4404-96f7-8fd86d9e3ace" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F2000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Xe cộ</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/do-dien-tu" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F5000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Đồ điện tử</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/mua-ban-do-dung-me-va-be" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F11000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Mẹ và bé</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/dich-vu-du-lich" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F6000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Dịch vụ, du lịch</h4>
+              </a>
+            </div>
+          </div>
+            <div class="discovery-category">
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.vieclamtot.com/" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F13000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Việc làm</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/mua-ban-thu-cung" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F12000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Thú cưng</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/mua-ban-do-an-thuc-pham-va-cac-loai-khac" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F7000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Đồ ăn và thực phẩm</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/mua-ban-tu-lanh-may-lanh-may-giat" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F9000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Tủ lạnh, máy lạnh, máy giặt</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/mua-ban-thoi-trang-do-dung-ca-nhan" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2F3000.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Thời trang, đồ dùng cá nhân</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/mua-ban?giveaway=true" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2Fcho-tang-mien-phi.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Cho và tặng miễn phí</h4>
+              </a>
+            </div>
+            <div class="discovery-item-link-wrap">
+              <a href="https://www.chotot.com/mua-ban" class="discovery-item-link">
+                <img src="https://lighthouse.chotot.com/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchapy-pro%2Fnewcats%2Fv8%2Ftat-ca-danh-muc.png&w=256&q=95" class="discovery-img">
+                <h4 class="discovery-title">Tất cả danh mục</h4>
+              </a>
+            </div>
+          </div>
+          </span>
+        </div>
+        <div class="product">
+          <h2 class="contain-title">Tính năng dành cho bạn</h2>
+          <div class="product-wrap">
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/rZo4BQk2bqL0Ti-rtlKEjfBr_WjJ5DTPDYW7VcG_UwM/preset:listing/plain/25b20113f68f00f2a30aafe77536732f-2817305663755347153.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a style="color: black; text-decoration: none" href="https://www.chotot.com/mua-ban"><h5 class="product-title">Chính chủ cần bán</h5></a>
+                  <h5 class="product-square">500 m²</h5>
+                  <h4 class="product-price">1,5 tỷ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>16 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Tp Hồ Chí Minh</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-dong-ho-quan-ninh-kieu-can-tho/104204578.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/qmfJ7CDa5gLlDwqcqD8R2vRilJrbj8EP4V_Mrvp3O1c/preset:listing/plain/f81d8b3dbb4cd7dd6c43111647301b80-2815466024470134245.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a style="color: black; text-decoration: none"href="https://www.chotot.com/mua-ban-dong-ho-quan-ninh-kieu-can-tho/104204578.htm"> <h5 class="product-title">Đồng hồ Eterna qua sử dụng
+
+                    </h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">7.500.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>22 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Cần Thơ</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-do-an-thuc-pham-thanh-pho-tuyen-quang-tuyen-quang/104722169.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/_Y5RBsz6QZutoVEIfkN5CdLc302tXFR-ZYxowCkElbA/preset:listing/plain/d78f12c48cc63338293cd99e648eacd6-2817534254555809787.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-do-an-thuc-pham-thanh-pho-tuyen-quang-tuyen-quang/104722169.htm" style="color: black; text-decoration: none"><h5 class="product-title">Trà Đào Detox Plus Giảm Cân Hiệu Quả</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">399.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>18 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Tuyên Quang</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-phu-kien-thoi-trang-khac-quan-ninh-kieu-can-tho/104809440.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/Ux2swwsmTVgCH9EjAai7eyACBxXCQIByOGUm7p21DhA/preset:listing/plain/0c9733bcf7d0b933fd69e18cec1648fa-2817858596206042673.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-phu-kien-thoi-trang-khac-quan-ninh-kieu-can-tho/104809440.htm" style="color: black; text-decoration: none"><h5 class="product-title">Khẩu trang y tế</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">35.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>23 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Tân An</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-do-suu-tam-do-co-quan-ninh-kieu-can-tho/104810995.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/oyxy3iJdKP2mbcys0WXA5LuP8b7NttTAMU74vWv4k5k/preset:listing/plain/7c7f741069e8781a2c67a44d85d24197-2817866638150322506.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-do-suu-tam-do-co-quan-ninh-kieu-can-tho/104810995.htm" style="color: black; text-decoration: none"><h5 class="product-title">RÌU PHÁP KHÍ BẰNG ĐỒNG</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">1.200.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>21 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Thới Bình</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://xe.chotot.com/mua-ban-xe-may-quan-binh-tan-tp-ho-chi-minh/104716662.htm?_gl=1*1ipju0m*_ga*MTg1MzYwNTI5NS4xNjc5MzIwMzk0*_ga_XQVN5K27XX*MTY3OTczMDY4Ni4yNi4xLjE2Nzk3MzM1NDEuNTYuMC4w" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/D2QxJUE9hV-7cpvXh_FKpNORdLsT5qyfSeLXCaOLT4s/preset:listing/plain/e92ae7914972ac06f61057f084236fbe-2817520581962276337.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://xe.chotot.com/mua-ban-xe-may-quan-binh-tan-tp-ho-chi-minh/104716662.htm?_gl=1*1ipju0m*_ga*MTg1MzYwNTI5NS4xNjc5MzIwMzk0*_ga_XQVN5K27XX*MTY3OTczMDY4Ni4yNi4xLjE2Nzk3MzM1NDEuNTYuMC4w" style="color: black; text-decoration: none"> <h5 class="product-title">Ex 150 biển 69 xe đẹp máy zin cực chất</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">18.800.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>7 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Tp Hồ Chí Minh</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-dien-thoai-quan-hoang-mai-ha-noi/104814046.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/0kPNbDJew8THyAK3PMJvZ21YSaWPp4rkXY0Vi6dhE7M/preset:listing/plain/6b63545f41d10bc47cd885e2e5f9fc4c-2817884995119978843.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-dien-thoai-quan-hoang-mai-ha-noi/104814046.htm" style="color: black; text-decoration: none"><h5 class="product-title">Find X5 pro 12/256g kèm sạc</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">11.350.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>19 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Hà Nội</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-quan-ao-thanh-pho-thu-duc-tp-ho-chi-minh/104702684.htm#px=SR-special_display_ad-[PO-1][PL-default]" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/QaYCi9YrA55pthFQQ97ki2xQoTNS6o-Os4MXk2Qh7NQ/preset:listing/plain/b619dee770fe8a86a9e02643bb3656d5-2817447140391033616.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-quan-ao-thanh-pho-thu-duc-tp-ho-chi-minh/104702684.htm#px=SR-special_display_ad-[PO-1][PL-default]" style="color: black; text-decoration: none"><h5 class="product-title">SIÊU PHẨM ÁO POLO NAM 2023</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">150.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>20 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Tp Hồ Chí Minh</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-dong-ho-quan-ninh-kieu-can-tho/104800092.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/V54Rmxil-u_bQ1IIZV2VSyNleupACdNzsMW6M4fqxaA/preset:listing/plain/ad64df92f92a61100d38f3f23b6c2625-2817832039616993736.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-dong-ho-quan-ninh-kieu-can-tho/104800092.htm" style="color: black; text-decoration: none"><h5 class="product-title">Đồng hồ nam cơ tự động Carotif</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">580.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Hôm qua</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Hải Phòng</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-giay-dep-thanh-pho-rach-gia-kien-giang/104811787.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/XfAgHaeZzqISMWaxosaIVYVqgkS4_T5oyYpE2QGsm3Y/preset:listing/plain/c02348ad39a70a3fded7710e2cabf3ab-2817868447353218126.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-giay-dep-thanh-pho-rach-gia-kien-giang/104811787.htm" style="color: black; text-decoration: none"><h5 class="product-title">Chính hãng.Reebok Royal Complete Clean</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">390.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>23 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Kiên Giang</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban?q=Tr%E1%BB%8D%20%C4%91%C6%B0%E1%BB%9Dng%20440" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/OGJo40vvYNYH0b7-INJgw6kIOQQQITYXZDROq5R0wrU/preset:listing/plain/7352de4580be5edaa5d6517078312dab-2817607397156398089.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                   <a  href="https://www.chotot.com/mua-ban?q=Tr%E1%BB%8D%20%C4%91%C6%B0%E1%BB%9Dng%20440" style="color: black; text-decoration: none"><h5 class="product-title">Trọ đường 440</h5>
+                  <h5 class="product-square">20 m²</h5></a>
+                  <h4 class="product-price">3,8 triệu/tháng</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>20 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Tp Hồ Chí Minh</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.nhatot.com/mua-ban-nha-dat-thanh-pho-thuan-an-binh-duong/104771398.htm?ctfp=07b202a6-327d-4404-96f7-8fd86d9e3ace&_gl=1*15se6ey*_ga*MTg1MzYwNTI5NS4xNjc5MzIwMzk0*_ga_XQVN5K27XX*MTY3OTczMDY4Ni4yNi4xLjE2Nzk3MzM4ODYuMTEuMC4w&_ga=2.194819117.1432895111.1679320394-1853605295.1679320394" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/udjpYZfdvENMc3cINKBxeSvxwCtz77fx9iUYu4eCORE/preset:listing/plain/e651f81b5a9f960ce65b578a1c425b25-2817708254031006899.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.nhatot.com/mua-ban-nha-dat-thanh-pho-thuan-an-binh-duong/104771398.htm?ctfp=07b202a6-327d-4404-96f7-8fd86d9e3ace&_gl=1*15se6ey*_ga*MTg1MzYwNTI5NS4xNjc5MzIwMzk0*_ga_XQVN5K27XX*MTY3OTczMDY4Ni4yNi4xLjE2Nzk3MzM4ODYuMTEuMC4w&_ga=2.194819117.1432895111.1679320394-1853605295.1679320394" style="color: black; text-decoration: none"><h5 class="product-title">Bán Nhà 1 Trệt 2 Lầu 68.8m²</h5></a>
+                  <h5 class="product-square">68.8 m² - 3 PN</h5>
+                  <h4 class="product-price">3,5 tỷ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>5 ngày trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Bình Dương</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban?q=N%E1%BB%81n%20bi%E1%BB%87t%20th%E1%BB%B1%20nam%20long%202%20c%E1%BA%A7n%20th%C6%A1%20si%C3%AAu%20%C4%91%E1%BA%B9p%20!!" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/JHDakS7k8Ncmrph2uGzYnKN58gDY21yH3hk51S6p-YQ/preset:listing/plain/909dbca27639f03d9c627341bf316639-2817880154784279108.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban?q=N%E1%BB%81n%20bi%E1%BB%87t%20th%E1%BB%B1%20nam%20long%202%20c%E1%BA%A7n%20th%C6%A1%20si%C3%AAu%20%C4%91%E1%BA%B9p%20!!" style="color: black; text-decoration: none"><h5 class="product-title">Nền biệt thự nam long 2 cần thơ siêu đẹp !!</h5>
+                <h5 class="product-square">175 m²</h5></a>
+                  <h4 class="product-price">8,3 tỷ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>13 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Đồng Nai</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-laptop-thanh-pho-vinh-long-vinh-long/104813744.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/ME4A99XCPDRtsXszjZOnx1tSNdNi9oMuhhiYnAmARtQ/preset:listing/plain/97d8ef13e16a1f8a735283dd407ea7de-2817881703129912745.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-laptop-thanh-pho-vinh-long-vinh-long/104813744.htm" style="color: black; text-decoration: none"><h5 class="product-title">LAPTOP MSI MODERN 14 B10MW Fullbox</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">7.900.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>9 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Vĩnh Long</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-dong-ho-thanh-pho-nha-trang-khanh-hoa/104276576.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/gzvZwoY1-xuFia4kRWYXfWW_zYhI_Uelu1Fdw29Uiss/preset:listing/plain/7e2b2a8f5573cce985225a80ffed17b4-2815751910247698876.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-dong-ho-thanh-pho-nha-trang-khanh-hoa/104276576.htm" style="color: black; text-decoration: none"><h5 class="product-title">Đồng hồ thuỵ sĩ 6 kim CERTINA swiss made</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">10.900.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>4 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Khánh Hòa</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://xe.chotot.com/mua-ban-oto-quan-cai-rang-can-tho/104737533.htm?_gl=1*uwzxhd*_ga*MTg1MzYwNTI5NS4xNjc5MzIwMzk0*_ga_XQVN5K27XX*MTY3OTczMDY4Ni4yNi4xLjE2Nzk3MzQwMzYuMjIuMC4w#px=SR-special_display_ad-[PO-1][PL-default]" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/xn8eMMmq9HFl_5-qMcVncWY09OMYlcIJas_hfPko4Qo/preset:listing/plain/986c8861f49aa31fb5259ec16b16c273-2817577891528324555.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://xe.chotot.com/mua-ban-oto-quan-cai-rang-can-tho/104737533.htm?_gl=1*uwzxhd*_ga*MTg1MzYwNTI5NS4xNjc5MzIwMzk0*_ga_XQVN5K27XX*MTY3OTczMDY4Ni4yNi4xLjE2Nzk3MzQwMzYuMjIuMC4w#px=SR-special_display_ad-[PO-1][PL-default]" style="color: black; text-decoration: none"><h5 class="product-title">Huynhdai Tucson 2.0 Limited 2019 giá tốt</h5></a>
+                  <h5 class="product-square">2019 - Tự động</h5>
+                  <h4 class="product-price">695.000.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>3 ngày trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Đà Nẵng</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://xe.chotot.com/mua-ban-xe?q=C%E1%BA%A7n%20thanh%20l%C3%BD" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/BFDQWa2fX8W1mfCvpz7kJbJNAASMmjdABrLenhxnijg/preset:listing/plain/04b86251b87de361672f14ed543ff574-2817880423223384520.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                   <a  href="https://xe.chotot.com/mua-ban-xe?q=C%E1%BA%A7n%20thanh%20l%C3%BD" style="color: black; text-decoration: none"><h5 class="product-title">Cần thanh lý</h5></a>
+                  <h5 class="product-square">2019 - Tay côn/Moto</h5>
+                  <h4 class="product-price">29.500.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>21 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Bình Thuận</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-do-suu-tam-do-co-quan-cai-rang-can-tho/104797204.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/q-zvZsARDsR3SStggcz82a7IHDxOe1Lg0QSmB8sHf68/preset:listing/plain/8eecbdd23b5b7200b26fdffd6d34acf5-2817826546496682984.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-do-suu-tam-do-co-quan-cai-rang-can-tho/104797204.htm" style="color: black; text-decoration: none"><h5 class="product-title">Đá Thạch Anh tinh thể màu vàng tự nhiên</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">150.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Hôm qua</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Cần Thơ</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-so-thich-khac-huyen-vinh-thanh-can-tho/104813358.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/O2lnJOkw7ln0yC6oyvJymBezlNC7dCl2M3M9oGR-3Oo/preset:listing/plain/8f382ffec56f14de53485fef163cf714-2817878647225083293.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-so-thich-khac-huyen-vinh-thanh-can-tho/104813358.htm" style="color: black; text-decoration: none"><h5 class="product-title">Đàn Yamaha Japan Nguyên Con</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">1.000.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Hôm kia</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Cần Thơ</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="none-mobile product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-cho-quan-bac-tu-liem-ha-noi/104777493.htm" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/rwZVmy6pang-Aqr0ordHisGjTlOxEcYVnrpvXumD2P4/preset:listing/plain/a9a465c973499c4d36f307c7f24c8318-2817739092283657664.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban-cho-quan-bac-tu-liem-ha-noi/104777493.htm" style="color: black; text-decoration: none"><h5 class="product-title">Phốc sóc đực hơn 1 năm</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">3.000.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>15 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Long An</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+            <div class="product-item">
+              <a href=""><div class="product-item-wrap">
+                <div class="product-img-wrap">
+                  <a  href="https://www.chotot.com/mua-ban?q=Iphone%2013%20%C4%91%E1%BA%B9p%2099%25%20m%C3%A0u%20h%E1%BB%93ng.%C4%91en%20tr%E1%BA%AFng" class="product-link">
+                    <div class="product-img-link-wrap">
+                    <img src="https://cdn.chotot.com/lM9gGik_uZVp9hHgIFvhYprWga9R1b8hRXmx0IC0hkA/preset:listing/plain/ed03e31e0afcddd9d0083ca780514d90-2817733434622643648.jpg" class="product-img">
+                      
+                  </div>
+                    
+                  </a>
+                  <div class="product-heart">
+                        <button>
+                      <img width="20" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-content-wrap">
+                  <a  href="https://www.chotot.com/mua-ban?q=Iphone%2013%20%C4%91%E1%BA%B9p%2099%25%20m%C3%A0u%20h%E1%BB%93ng.%C4%91en%20tr%E1%BA%AFng" style="color: black; text-decoration: none"style="color: black; text-decoration: none"><h5 class="product-title">Iphone 13 đẹp 99% màu hồng.đen trắng</h5></a>
+                  <h5 class="product-square"></h5>
+                  <h4 class="product-price">14.600.000 đ</h4>
+                  <div class="product-menu">
+                        <button>
+                      <svg style="margin: 0 12px" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                    </div>
+                <div class="product-online">
+                  <svg width="66" height="66" fill="currentColor" class="bi dot-icon bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                  <span class="product-time">
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>15 giờ trước</span>
+                    <svg width="28" height="28" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                    <span>Long An</span>
+                  </span>
+                </div>
+              </div>
+            </div></a>
+          </div>
+          </div>
+          <h2 class="product-title-total"><a href="">Xem thêm</a></h2> 
+        </div>
+        
+        <div class="key">
+          <h4 class="key-title">Các từ khóa phổ biến</h4>
+          <div class="key-wrap">
+            <div class="key-wrap-all">
+              <ul class="key-list">
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Điện thoại Samsung</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Thuê Căn Hộ Chung Cư</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Mua Bán Nhà Đất</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Máy tính để bàn giá rẻ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Micro cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Samsung Note 10</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Máy tính để bàn cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Laptop Apple Macbook</a>
+              </li>
+            </ul>
+            </div>
+            <div class="key-wrap-all">
+              <ul class="key-list">
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Samsung Note 10</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Tivi cũ giá rẻ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Thuê Phòng Trọ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Chợ đồ cũ Sài Gòn</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Samsung Note 10</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Máy quay cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Loa Cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Điện Thoại Cũ</a>
+              </li>
+            </ul>
+            </div>
+            <div class="key-wrap-all">
+              <ul class="key-list">
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Điện Thoại iPhone</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Mua Bán Đất</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Điện thoại Samsung Cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Ống kính (lens) cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Tai Nghe Cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Máy Tính Bảng Cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Macbook cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Iphone 13Pro Max</a>
+              </li>
+            </ul>
+            </div>
+            <div class="key-wrap-all">
+              <ul class="key-list">
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Dàn karaoke cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Thuê Nhà Nguyên Căn</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Chợ đồ cũ Hà Nội</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Máy ảnh cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Amply</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Laptop Cũ</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Máy lạnh</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Máy giặt</a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>  
+  <div class="footer">
+    <div class="grid">
+      <div class="grid__full">
+        <div class="footer-col footer-col-left">
+          <h4 class="footer-title">Tải ứng dụng chợ tốt</h4>
+          <div class="footer-img-wrap">
+              <img src="https://static.chotot.com/storage/default/group-qr.webp" class="footer-img-qr">
+            <div class="footer-app-wrap">
+              <img src="https://static.chotot.com/storage/default/ios.svg" class="footer-app-download">
+              <img src="https://static.chotot.com/storage/default/android.svg" class="footer-app-download">
+              <img src="https://static.chotot.com/storage/default/huawei_app_install.webp" class="footer-app-download">
+            </div>
+          </div>
+        </div>
+        
+        <div class="none footer-col footer-col-mid">
+          <h4 class="footer-title">Chăm sóc khách hàng</h4>
+          <ul class="key-list">
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Trung tâm trợ giúp</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">An toàn mua bán</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Quy định cần biết</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Quy chế quyền riêng tư</a>
+              </li>
+            <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Liên hệ hỗ trợ</a>
+              </li>
+            </ul>
+        </div>
+        <div class="none footer-col footer-col-mid">
+          <h4 class="footer-title">Về chợ tốt</h4>
+          <ul class="key-list">
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Giới thiệu</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Tuyển dụng</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Samsung Note 10</a>
+              </li>
+              <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Truyền thông</a>
+              </li>
+            <li class="key-list-item">
+                <a href="#" class="key-list-item-link">Blog</a>
+              </li>
+            </ul>
+        </div>
+        <div class="footer-dec footer-col">
+          <h4 class="footer-title">Liên kết</h4>
+          <div class="footer-link-wrap">
+            <img src="https://static.chotot.com/storage/default/facebook.svg" class="footer-link">
+            <img src="https://static.chotot.com/storage/default/youtube.svg" class="footer-link">
+            <img src="https://static.chotot.com/storage/default/linkedin.svg" class="footer-link">
+          </div>
+          <h4 class="footer-title">Chứng nhận</h4>
+          <img src="https://static.chotot.com/storage/default/cerfiticate.png" class="footer-link-in">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
